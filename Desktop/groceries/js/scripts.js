@@ -9,9 +9,9 @@ $(function(){
        return $("#" + List).val();
     });
 
-    var anotherArray = newArray.sort();
+    newArray.sort();
 
-    anotherArray.forEach(function(caps) {
+    newArray.forEach(function(caps) {
       $("ul").append("<li>" + caps.toUpperCase() + "</li>");
     });
     $("form").hide();
